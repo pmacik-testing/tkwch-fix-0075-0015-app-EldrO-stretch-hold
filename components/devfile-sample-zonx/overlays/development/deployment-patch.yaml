@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-zonx
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkwch-fix-0075-0015-tenant/tkwch-fix-0075-0015-app/devfile-sample-zonx@sha256:b5af45e8da4cfcc40b5318cd754d8b05c84f34c26f01a3b1d18a00b4c4f66a5f
+        name: my-nodejs
+        resources: {}
+status: {}
